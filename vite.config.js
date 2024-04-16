@@ -7,5 +7,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: true,
-  }
+    rollupOptions: {
+      external: ["modern-normalize"],
+    },
+  },
 });
+
